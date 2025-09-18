@@ -9,6 +9,11 @@ import {
   Smartphone,
   Paintbrush,
   Code,
+  Globe,
+  GlobeIcon,
+  RefreshCcw,
+  CheckCircle,
+  CalendarCheck,
 } from "lucide-react";
 
 const PortfolioPage = () => {
@@ -25,58 +30,70 @@ const PortfolioPage = () => {
   const projects = [
     {
       id: 1,
-      title: "E-Commerce Platform",
+      title: "Furniture E-Commerce Platform",
       category: "web",
-      image: "/projects/bobby2.png?height=600&width=800",
+      image: "/projects/bobby1.png?height=600&width=800",
       description:
-        "A comprehensive e-commerce solution with advanced product filtering, payment integration, and inventory management.",
-      technologies: ["React", "Node.js", "MongoDB", "Stripe"],
-      link: "#",
+        "A full-stack e-commerce web application that allows a furniture store to showcase products with high-quality images, advanced filtering options, and detailed specifications. It features a secure checkout system with integrated payments, customer accounts with order tracking and wishlists, and an intuitive admin dashboard for managing products, inventory, and promotions.",
+      technologies: ["React", "TailwindCSS", "Node.js", "postgreSQL"],
+      link: "https://www.bobbyfurniturekenya.com/",
+      status: "Live",
       icon: <Laptop className="w-5 h-5" />,
     },
     {
       id: 2,
-      title: "Healthcare Mobile App",
-      category: "mobile",
+      title: "Fashion Retail eCommerce",
+      category: "web",
       image: "/projects/fashion.png?height=600&width=800",
       description:
-        "A patient-centered mobile application for appointment scheduling, medical records access, and telemedicine.",
-      technologies: ["React Native", "Firebase", "Node.js"],
-      link: "#",
-      icon: <Smartphone className="w-5 h-5" />,
+        "A full-stack e-commerce web application tailored for a single fashion retailer, featuring a responsive storefront with product galleries, size and category filtering, and secure payment integration. Customers can create accounts to manage orders, save wishlists, and track deliveries, while the admin dashboard provides tools for inventory management, order processing, and promotional campaigns.",
+      technologies: ["Next.js", "TailwindCSS", "Node.js", "JWT", "postgreSQL"],
+      link: "",
+      status: "Completed",
+      icon: <Laptop className="w-5 h-5" />,
     },
     {
       id: 3,
-      title: "Financial Dashboard",
+      title: "Car Dealership",
       category: "web",
       image: "/projects/car2.png?height=600&width=800",
       description:
-        "An interactive financial dashboard with real-time data visualization, reporting, and analytics.",
-      technologies: ["Vue.js", "D3.js", "Express", "PostgreSQL"],
-      link: "#",
+        "A fwebsite for a car dealership, offering an elegant platform to showcase vehicle listings with detailed specifications, images, and pricing. It includes advanced search and filtering by model, year, or price, a secure inquiry and booking system, and user accounts for managing favorites and requests. The admin dashboard enables efficient management of vehicle inventory, customer leads, and promotional offers.",
+      technologies: ["Next.js", "Typescript", "Express", "PostgreSQL"],
+      link: "",
+      status: "Completed",
       icon: <Laptop className="w-5 h-5" />,
     },
     {
       id: 4,
-      title: "Travel Companion App",
-      category: "mobile",
+      title: "Restaurant Web Application",
+      category: "web",
       image: "/projects/grill.png?height=600&width=800",
       description:
-        "A feature-rich travel app with itinerary planning, location-based recommendations, and offline maps.",
-      technologies: ["Flutter", "Google Maps API", "Firebase"],
-      link: "#",
-      icon: <Smartphone className="w-5 h-5" />,
+        "A restaurant web app, featuring an interactive digital menu with category-based filtering, online table reservations, and secure food ordering with integrated payments. Customers can create accounts to track past orders, manage favorites, and receive special offers, while the admin dashboard allows staff to update menu items, manage reservations, and process orders in real time.",
+      technologies: ["React(Next.js)", "TypeScript", "Exprese.js", "Supabase"],
+      link: "",
+      status: "In Progress",
+      icon: <Laptop className="w-5 h-5" />,
     },
     {
       id: 5,
-      title: "Corporate Website Redesign",
-      category: "design",
+      title: "Hospital Management System",
+      category: "web",
       image: "/projects/health.png?height=600&width=800",
       description:
-        "A complete redesign of a corporate website focusing on user experience, accessibility, and modern aesthetics.",
-      technologies: ["Figma", "Adobe XD", "HTML/CSS", "JavaScript"],
-      link: "#",
-      icon: <Paintbrush className="w-5 h-5" />,
+        "A full-stack web application for a medical clinic, providing patient registration, appointment scheduling, and secure access to medical records. Doctors and staff can manage patient information, update treatment notes, and track appointments, while administrators use the dashboard to oversee staff, departments, and billing. The system ensures role-based access, data privacy, and efficient hospital operations through a centralized platform.",
+      technologies: [
+        "Typescript",
+        "JavaScript",
+        "TailwindCSS",
+        "Node.js",
+        "poetgreSQL",
+        "Render",
+      ],
+      link: "",
+      status: "Completed",
+      icon: <Laptop className="w-5 h-5" />,
     },
     {
       id: 6,
@@ -84,9 +101,10 @@ const PortfolioPage = () => {
       category: "custom",
       image: "/placeholder.png?height=600&width=800",
       description:
-        "A custom inventory management solution with barcode scanning, reporting, and supplier management.",
+        "A cusrom desktop application designed for a single business to manage its inventory efficiently, featuring product cataloging, stock level tracking, and automated alerts for low or excess inventory. It supports role-based access for staff, generates detailed reports on stock movement and sales, and provides tools for purchase order management and supplier tracking, ensuring streamlined operations without relying on a web platform.",
       technologies: [".NET", "SQL Server", "React", "Azure"],
-      link: "#",
+      link: "",
+      status: "Planned",
       icon: <Code className="w-5 h-5" />,
     },
     {
@@ -95,34 +113,66 @@ const PortfolioPage = () => {
       category: "web",
       image: "/placeholder.png?height=600&width=800",
       description:
-        "An interactive learning platform with course management, video streaming, and progress tracking.",
-      technologies: ["Next.js", "MongoDB", "AWS S3", "Tailwind CSS"],
-      link: "#",
+        "AA full-stack mobile application designed for an educational institution, offering course listings, interactive learning materials, and secure student enrollment. It supports features such as assignments, quizzes, and progress tracking, while students can manage their profiles, access resources, and receive notifications. The admin panel enables instructors and staff to manage courses, monitor student performance, and communicate updates seamlessly.",
+      technologies: ["React Native", "MongoDB", "AWS S3"],
+      link: "",
+      status: "Planned",
       icon: <Laptop className="w-5 h-5" />,
     },
     {
       id: 8,
-      title: "Restaurant Ordering App",
-      category: "mobile",
-      image: "/projects/grill2.png?height=600&width=800",
+      title: "Logistics Website",
+      category: "web",
+      image: "/projects/aura.png?height=600&width=800",
       description:
-        "A mobile app for restaurant ordering with real-time order tracking, menu customization, and payment processing.",
-      technologies: ["React Native", "Node.js", "MongoDB", "Stripe"],
-      link: "#",
-      icon: <Smartphone className="w-5 h-5" />,
+        "A full-stack web application for a logistics company, providing shipment booking, real-time tracking, and secure payment integration. Customers can create accounts to manage orders, view delivery history, and receive status updates, while the admin dashboard allows staff to oversee shipments, manage fleet schedules, and generate performance reports.",
+      technologies: ["React.js", "Node.js", "MongoDB", "Google Maps API"],
+      link: "",
+      status: "In Progress",
+      icon: <Laptop className="w-5 h-5" />,
     },
     {
       id: 9,
-      title: "Brand Identity Design",
-      category: "design",
+      title: "Real Estate Management",
+      category: "web",
       image: "/placeholder.png?height=600&width=800",
       description:
-        "A comprehensive brand identity design including logo, color palette, typography, and brand guidelines.",
-      technologies: ["Adobe Illustrator", "Adobe Photoshop", "Figma"],
-      link: "#",
-      icon: <Paintbrush className="w-5 h-5" />,
+        "AA full-stack web application for a  real estate agency, featuring property listings with detailed descriptions, images, and pricing, along with advanced search and filtering by location, type, or budget. Customers can create accounts to save favorites, schedule property viewings, and submit inquiries, while the admin dashboard enables agents to manage listings, track leads, and oversee client interactions.",
+      technologies: [
+        "Next,js",
+        "TypeScript",
+        "TailwidCSS",
+        "Node.js",
+        "postgreSQL",
+        "Google Maps API",
+      ],
+      link: "",
+      status: "Planned",
+      icon: <Laptop className="w-5 h-5" />,
     },
   ];
+
+  const getBgClass = (status) => {
+    if (status === "Live") return "bg-green-500";
+    if (status === "In Progress") return "bg-yellow-500";
+    if (status === "Completed") return "bg-blue-500";
+    return "bg-gray-500";
+  };
+
+  const getStatusIcon = (status) => {
+    switch (status) {
+      case "Live":
+        return <Globe className="animate-heartbeat text-white w-4 h-4 mr-1" />;
+      case "In Progress":
+        return <RefreshCcw className="animate-spin text-white w-4 h-4 mr-1" />;
+      case "Completed":
+        return <CheckCircle className="text-white w-4 h-4 mr-1" />;
+      case "Planned":
+        return <CalendarCheck className="text-white w-4 h-4 mr-1" />;
+      default:
+        return null;
+    }
+  };
 
   const filteredProjects =
     filter === "all"
@@ -133,7 +183,7 @@ const PortfolioPage = () => {
     <div className="bg-gray-50">
       {/* Hero Section */}
       <section className="bg-gradient-to-r from-blue-900 to-indigo-900 text-white py-20">
-        <div className="container mx-auto px-4">
+        <div className="container mx-auto px-4 pt-8 md:pt-14">
           <motion.div
             className="max-w-3xl mx-auto text-center"
             initial={{ opacity: 0, y: 20 }}
@@ -196,6 +246,21 @@ const PortfolioPage = () => {
                 layout
               >
                 <div className="relative overflow-hidden h-64">
+                  <button
+                    className={`${getBgClass(
+                      project.status
+                    )} relative inline-flex items-center px-4 py-2 
+             rounded-tl-md rounded-br-md 
+             rounded-tr-none rounded-bl-none
+             text-white text-sm font-semibold 
+             shadow-md 
+             focus:outline-none focus:ring-2 focus:ring-indigo-400 
+             transition`}
+                  >
+                    {getStatusIcon(project.status)}
+                    {project.status}
+                  </button>
+
                   <img
                     src={project.image || "/placeholder.png"}
                     alt={project.title}
@@ -235,15 +300,25 @@ const PortfolioPage = () => {
                       </span>
                     ))}
                   </div>
-                  <a
-                    href={project.link}
-                    className="inline-flex items-center text-blue-600 font-semibold hover:text-blue-800 transition-colors"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    View Project
-                    <ExternalLink className="ml-2 w-4 h-4" />
-                  </a>
+                  {project.link ? (
+                    <a
+                      href={project.link}
+                      className="inline-flex items-center text-blue-600 font-semibold hover:text-blue-800 transition-colors"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      View Project
+                      <ExternalLink className="ml-2 w-4 h-4" />
+                    </a>
+                  ) : (
+                    <button
+                      className="inline-flex items-center text-gray-400 font-semibold transition-colors cursor-not-allowed"
+                      rel="noopener noreferrer"
+                    >
+                      View Project
+                      <ExternalLink className="ml-2 w-4 h-4" />
+                    </button>
+                  )}
                 </div>
               </motion.div>
             ))}
@@ -260,7 +335,7 @@ const PortfolioPage = () => {
       </section>
 
       {/* Case Studies Section */}
-      <section className="py-20 bg-white">
+      {/* <section className="py-20 bg-white">
         <div className="container mx-auto px-4">
           <motion.div
             className="text-center mb-16"
@@ -342,7 +417,7 @@ const PortfolioPage = () => {
             ))}
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* Testimonials */}
       <section className="py-20 bg-gray-50">

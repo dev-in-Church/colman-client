@@ -86,7 +86,7 @@ const Home = () => {
           {Array.from({ length: 20 }).map((_, index) => (
             <div
               key={index}
-              className="absolute rounded-full bg-white opacity-10"
+              className="absolute rounded-full bg-white"
               style={{
                 width: Math.random() * 6 + 2 + "px",
                 height: Math.random() * 6 + 2 + "px",
