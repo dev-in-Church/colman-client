@@ -174,7 +174,7 @@ const Home = () => {
           style={{ opacity: heroOpacity }}
         >
           <motion.span
-            className="inline-block py-2 px-4 rounded-full bg-cyan-500/10 border border-cyan-400/20 text-cyan-300 text-sm font-semibold mb-6 backdrop-blur-sm"
+            className="inline-block py-2 px-4 rounded-full bg-cyan-500/10 border border-cyan-400/20 text-cyan-300 text-sm font-semibold mb-6 backdrop-blur-sm mt-24"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
