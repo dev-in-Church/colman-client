@@ -106,7 +106,7 @@ const About = () => {
             transition={{ duration: 0.5, delay: 0.2 }}
             viewport={{ once: true }}
           >
-            Building innovative digital solutions since 2013
+            Building innovative digital solutions since 2024
           </motion.p>
         </div>
 
