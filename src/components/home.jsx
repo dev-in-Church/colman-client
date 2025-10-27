@@ -213,7 +213,7 @@ const Home = () => {
           >
             <a
               href="/contact"
-              className="group bg-gradient-to-r from-cyan-500 to-blue-600 hover:from-cyan-400 hover:to-blue-500 text-white font-semibold py-4 px-10 rounded-lg shadow-lg shadow-cyan-500/25 transition-all duration-300 hover:shadow-cyan-400/40 hover:shadow-2xl flex items-center justify-center hover:-translate-y-1"
+              className="group bg-gradient-to-r from-cyan-500 to-blue-600 hover:from-cyan-400 hover:to-blue-500 text-white font-semibold py-4 px-10 rounded-lg shadow-lg shadow-cyan-500/25 transition-all duration-300 hover:shadow-cyan-400/40 hover:shadow-2xl flex items-center justify-center hover:-translate-y-1 "
             >
               Get Started
               <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
@@ -247,7 +247,7 @@ const Home = () => {
         </motion.div>
 
         {/* Scroll Indicator */}
-        <motion.div
+        {/* <motion.div
           className="hidden md:absolute bottom-10 left-1/2 transform -translate-x-1/2 md:flex flex-col items-center"
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
@@ -255,7 +255,7 @@ const Home = () => {
         >
           <span className="text-sm text-slate-400 mb-2 font-medium">Scroll to explore</span>
           <ChevronDown className="w-6 h-6 text-cyan-400 animate-bounce" />
-        </motion.div>
+        </motion.div> */}
       </motion.section>
 
       {/* Stats Section */}
