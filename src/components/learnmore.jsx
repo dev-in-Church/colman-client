@@ -315,9 +315,11 @@ const Services = () => {
           <p className="text-lg mb-8 opacity-90">
             Let's turn your vision into a fully functional digital product. Get a free consultation and project estimate today.
           </p>
+          <a href="/contact">
           <button className="bg-white text-blue-600 px-8 py-4 rounded-full font-semibold hover:bg-gray-100 transition-all transform hover:scale-105 shadow-lg">
             Get in Touch
           </button>
+          </a>
         </div>
       </motion.section>
     </div>
