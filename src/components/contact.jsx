@@ -107,8 +107,7 @@ const Contact = () => {
             Start Your Project Today
           </h1>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
-            Partner with Colman Tech Savvy to turn your ideas into impactful digital solutions.
-            We combine innovation, technology, and strategy to bring your vision to life with excellence.
+           Partner with Colman Tech Savvy to transform your ideas into powerful digital solutions. We blend innovation, technology, and strategy to bring your vision to life — efficiently and brilliantly.
           </p>
         </motion.div>
       </div>

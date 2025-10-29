@@ -95,7 +95,7 @@ function DoubleNavbar() {
     },
     {
       label: "About",
-      href: "/about",
+      href: "#about",
       hasSubmenu: true,
       icon: <Building className="w-4 h-4 ml-1" />,
       submenu: [
